@@ -12,7 +12,7 @@ def export_data():
     todos_route = 'https://jsonplaceholder.typicode.com/todos/?userID={}'
     users = users_route.format(argv[1])
     todos = todos_route.format(argv[1])
-    username = requests.get(users).json().get('name')
+    username = requests.get(users).json().get('username')
     todos_request = requests.get(todos).json()
 
     with open('{}.csv'.format(argv[1]), 'w') as file:
