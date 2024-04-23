@@ -2,8 +2,8 @@
 """Exports data in CSV  format"""
 
 import csv
-from sys import argv
 import requests
+from sys import argv
 
 
 def export_data():
@@ -23,5 +23,4 @@ def export_data():
 
 
 if __name__ == "__main__":
-    if len(argv) == 2:
-        export_data()
+    export_data()

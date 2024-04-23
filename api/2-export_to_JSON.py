@@ -28,5 +28,4 @@ def export_data():
 
 
 if __name__ == "__main__":
-    if len(argv) == 2:
-        export_data()
+    export_data()

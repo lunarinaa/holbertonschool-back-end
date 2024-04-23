@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """exporting data in json format"""
 
-import json
+
 import requests
+import json
 
 
 def export_data():
