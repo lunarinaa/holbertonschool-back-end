@@ -2,8 +2,8 @@
 """Python script using  API"""
 
 
-import sys
 import requests
+import sys
 
 
 def gather_data():
