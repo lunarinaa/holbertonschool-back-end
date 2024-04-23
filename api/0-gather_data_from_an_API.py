@@ -8,11 +8,11 @@ import sys
 
 def gather_data():
     """display on the standard output the employee TODO list progress """
-    userId = sys.argv[1]
+    user_id = sys.argv[1]
     users_route = 'https://jsonplaceholder.typicode.com/users/{}'
     todos_route = 'https://jsonplaceholder.typicode.com/todos/?userId={}'
-    user = users_route.format(userId)
-    todos = todos_route.format(userId)
+    user = users_route.format(user_id)
+    todos = todos_route.format(user_id)
     name = requests.get(user).json().get('name')
     todos_request = requests.get(todos).json()
     tasks = [task.get('title') for task in todos_request
@@ -23,5 +23,4 @@ def gather_data():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        gather_data()
+    gather_data()
