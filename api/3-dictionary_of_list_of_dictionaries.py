@@ -2,8 +2,8 @@
 """exporting data in json format"""
 
 
-import requests
 import json
+import requests
 
 
 def export_data():
