@@ -26,7 +26,7 @@ def export_data():
             tasks.append(task)
         data[user_id] = tasks
 
-    with open('todo_all_employees.json', 'w') as file:
+    with open('todo_all_employees.json', 'w+') as file:
         file.write(json.dumps(data))
 
 
